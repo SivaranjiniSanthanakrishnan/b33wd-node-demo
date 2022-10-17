@@ -3,6 +3,7 @@ const mongo = require('./connect');
 const employeeRouter = require('./router/employee');
 const productRouter = require('./router/product');
 const registerRouter = require('./router/register');
+const auth = require("./modules/authModule");
 
 const dotenv = require('dotenv');
 
