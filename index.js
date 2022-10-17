@@ -18,8 +18,8 @@ app.use('/', (req,res,next) => {
    console.log("Custom Middleware");   
    next();
 });
-
 app.use('/register', registerRouter);
+app.use("/", auth.authenticateUser);
 app.use('/employee', employeeRouter);
 app.use('/product', productRouter);
 
